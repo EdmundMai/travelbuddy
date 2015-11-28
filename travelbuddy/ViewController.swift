@@ -52,3 +52,34 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+  func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 12//iconMapper.count
+  }
+  
+  func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    let cell: IconCell = collectionView.dequeueReusableCellWithReuseIdentifier("icon", forIndexPath: indexPath) as! IconCell
+    cell.imageView.image = UIImage(named: "food")
+    
+    return cell
+    
+  }
+  
+  func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    let button = UIButton(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+    //    button.setTitle("heyyyy", forState: .Normal)
+    button.backgroundColor = UIColor(red: 0, green: 111, blue: 234, alpha: 1.0)
+    
+    let image = UIImage(named: "toilet")
+    button.setImage(image, forState: .Normal)
+    
+    let tap = UITapGestureRecognizer(target: self, action: Selector("largeImageTapped:"))
+    button.addGestureRecognizer(tap)
+    
+    button.alpha = 0.0
+    self.view.addSubview(button)
+    UIView.beginAnimations(nil, context: nil)
+    button.alpha = 1.0
+    UIView.commitAnimations()
+  }
+}

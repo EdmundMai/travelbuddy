@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0WV-1K-qbZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -87,6 +88,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="204" y="354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vZr-Ey-ht7">
+            <objects>
+                <viewController id="0WV-1K-qbZ" customClass="ViewController" customModule="travelbuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yrq-4J-pnr"/>
+                        <viewControllerLayoutGuide type="bottom" id="QJD-Kg-gku"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzU-yx-qVW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n2z-30-CRF">
+                                <rect key="frame" x="-4" y="20" width="328" height="553"/>
+                                <color key="backgroundColor" red="0.0" green="0.58194009989681783" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FxJ-ay-ANc">
+                                    <size key="itemSize" width="121" height="158"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="icon" id="woK-P3-0vu" customClass="IconCell" customModule="travelbuddy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="158"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="121" height="158"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wyi-20-mWB">
+                                                    <rect key="frame" x="8" y="8" width="105" height="142"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="Wyi-20-mWB" id="Okg-Jq-sFg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="0WV-1K-qbZ" id="JXs-aq-5Em"/>
+                                    <outlet property="delegate" destination="0WV-1K-qbZ" id="dFd-sO-DAv"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="n2z-30-CRF" secondAttribute="bottom" constant="-5" id="AlQ-Mu-PZx"/>
+                            <constraint firstItem="n2z-30-CRF" firstAttribute="leading" secondItem="hzU-yx-qVW" secondAttribute="leadingMargin" constant="-20" id="JTV-Zv-Xg5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n2z-30-CRF" secondAttribute="trailing" constant="-20" id="KEv-ee-WMz"/>
+                            <constraint firstItem="n2z-30-CRF" firstAttribute="top" secondItem="yrq-4J-pnr" secondAttribute="bottom" id="ObY-HV-SbS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hl9-0R-NtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="349"/>
         </scene>
     </scenes>
     <resources>
