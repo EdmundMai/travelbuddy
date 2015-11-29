@@ -10,7 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  let iconMapper = [1: "toilet", 2: "food", 3: "medicine"]
+  let iconMapper = [
+    0: "toilet-1",
+    1: "atm-machine",
+    2: "food",
+    3: "medicine",
+    4: "subway",
+    5: "atm",
+    6: "phone",
+    7: "taxi",
+    8: "hospital"
+  ]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,26 +30,6 @@ class ViewController: UIViewController {
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-  }
-  
-  @IBAction func smallImageTapped(sender: AnyObject) {
-    let smallButton = sender as! UIButton
-
-    let button = UIButton(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
-//    button.setTitle("heyyyy", forState: .Normal)
-    button.backgroundColor = UIColor(red: 0, green: 111, blue: 234, alpha: 1.0)
-    
-    let image = UIImage(named: iconMapper[smallButton.tag]!)
-    button.setImage(image, forState: .Normal)
-    
-    let tap = UITapGestureRecognizer(target: self, action: Selector("largeImageTapped:"))
-    button.addGestureRecognizer(tap)
-    
-    button.alpha = 0.0
-    self.view.addSubview(button)
-    UIView.beginAnimations(nil, context: nil)
-    button.alpha = 1.0
-    UIView.commitAnimations()
   }
 
   func largeImageTapped(sender: UITapGestureRecognizer) {
@@ -54,24 +44,39 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 12//iconMapper.count
+    return iconMapper.count
   }
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     let cell: IconCell = collectionView.dequeueReusableCellWithReuseIdentifier("icon", forIndexPath: indexPath) as! IconCell
-    cell.imageView.image = UIImage(named: "food")
+    print(indexPath.row)
+    cell.imageView.image = UIImage(named: iconMapper[indexPath.row]!)
     
     return cell
     
   }
   
+  func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+    let cell: IconCell = collectionView.cellForItemAtIndexPath(indexPath) as! IconCell
+    
+    cell.imageView.alpha = 0.5
+    return true
+  }
+  
+  func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {
+    let cell: IconCell = collectionView.cellForItemAtIndexPath(indexPath) as! IconCell
+    cell.imageView.alpha = 1.0
+  }
+  
+  
   func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    let cell: IconCell = collectionView.cellForItemAtIndexPath(indexPath) as! IconCell
+    
+    
     let button = UIButton(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
     //    button.setTitle("heyyyy", forState: .Normal)
     button.backgroundColor = UIColor(red: 0, green: 111, blue: 234, alpha: 1.0)
-    
-    let image = UIImage(named: "toilet")
-    button.setImage(image, forState: .Normal)
+    button.setImage(cell.imageView.image, forState: .Normal)
     
     let tap = UITapGestureRecognizer(target: self, action: Selector("largeImageTapped:"))
     button.addGestureRecognizer(tap)
