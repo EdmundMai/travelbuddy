@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     0: "toilet-1",
     1: "atm-machine",
     2: "food",
-    3: "medicine",
+    3: "charger-1",
     4: "subway",
-    5: "atm",
-    6: "phone",
+    5: "cafe",
+    6: "airport",
     7: "taxi",
-    8: "hospital"
+    8: "wifi"
   ]
   
   override func viewDidLoad() {
@@ -33,11 +33,11 @@ class ViewController: UIViewController {
   }
 
   func largeImageTapped(sender: UITapGestureRecognizer) {
-    let button = sender.view! as! UIButton
+    let enlargedView = sender.view!
     UIView.beginAnimations(nil, context: nil)
-    button.alpha = 0.0
+    enlargedView.alpha = 0.0
     UIView.commitAnimations()
-    button.removeFromSuperview()
+    enlargedView.removeFromSuperview()
   }
 
 }
@@ -72,19 +72,37 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
   func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     let cell: IconCell = collectionView.cellForItemAtIndexPath(indexPath) as! IconCell
     
+    let enlargedView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+    enlargedView.backgroundColor = UIColor(red: 0, green: 111, blue: 234, alpha: 1.0)
     
-    let button = UIButton(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
-    //    button.setTitle("heyyyy", forState: .Normal)
-    button.backgroundColor = UIColor(red: 0, green: 111, blue: 234, alpha: 1.0)
-    button.setImage(cell.imageView.image, forState: .Normal)
     
+    let enlargedImageView = UIImageView(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height/4, UIScreen.mainScreen().bounds.width*0.8, UIScreen.mainScreen().bounds.height/2))
+    enlargedImageView.image = cell.imageView.image
+    
+    enlargedView.addSubview(enlargedImageView)
+    
+
     let tap = UITapGestureRecognizer(target: self, action: Selector("largeImageTapped:"))
-    button.addGestureRecognizer(tap)
+    enlargedView.addGestureRecognizer(tap)
     
-    button.alpha = 0.0
-    self.view.addSubview(button)
+    enlargedView.alpha = 0.0
+    self.view.addSubview(enlargedView)
     UIView.beginAnimations(nil, context: nil)
-    button.alpha = 1.0
+    enlargedView.alpha = 1.0
     UIView.commitAnimations()
+//
+//    let button = UIButton(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+//    //    button.setTitle("heyyyy", forState: .Normal)
+//    button.backgroundColor = UIColor(red: 0, green: 111, blue: 234, alpha: 1.0)
+//    button.setImage(cell.imageView.image, forState: .Normal)
+//    
+//    let tap = UITapGestureRecognizer(target: self, action: Selector("largeImageTapped:"))
+//    button.addGestureRecognizer(tap)
+//    
+//    button.alpha = 0.0
+//    self.view.addSubview(button)
+//    UIView.beginAnimations(nil, context: nil)
+//    button.alpha = 1.0
+//    UIView.commitAnimations()
   }
 }
