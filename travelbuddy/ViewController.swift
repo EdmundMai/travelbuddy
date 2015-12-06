@@ -9,7 +9,9 @@
 import UIKit
 import iAd
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ADBannerViewDelegate {
+  
+  var bannerView: ADBannerView?
 
   let iconMapper = [
     0: "Toilet",
@@ -17,7 +19,7 @@ class ViewController: UIViewController {
     2: "Food",
     3: "Electric Outlet",
     4: "Subway",
-    5: "Coffee",
+    5: "Hotel",
     6: "Airport",
     7: "Taxi",
     8: "Wifi"
@@ -26,12 +28,12 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.canDisplayBannerAds = true
-    // Do any additional setup after loading the view, typically from a nib.
+    self.bannerView?.delegate = self
+    self.bannerView?.hidden = true
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
   func largeImageTapped(sender: UITapGestureRecognizer) {
@@ -40,6 +42,18 @@ class ViewController: UIViewController {
     enlargedView.alpha = 0.0
     UIView.commitAnimations()
     enlargedView.removeFromSuperview()
+  }
+  
+  func bannerViewDidLoadAd(banner: ADBannerView!) {
+    self.bannerView?.hidden = false
+  }
+  
+  func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+    self.bannerView?.hidden = true
+  }
+  
+  func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+    return willLeave
   }
 
 }
