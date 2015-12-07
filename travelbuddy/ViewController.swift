@@ -12,18 +12,6 @@ import iAd
 class ViewController: UIViewController, ADBannerViewDelegate {
   
   var bannerView: ADBannerView?
-
-  let iconMapper = [
-    0: "Toilet",
-    1: "ATM",
-    2: "Food",
-    3: "Electric Outlet",
-    4: "Subway",
-    5: "Hotel",
-    6: "Airport",
-    7: "Taxi",
-    8: "Wifi"
-  ]
   
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -14,7 +14,60 @@
 		81683AD81C0A3759002A9817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81683AD61C0A3759002A9817 /* LaunchScreen.storyboard */; };
 		81683AE21C0A61AC002A9817 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81683AE11C0A61AC002A9817 /* IconCell.swift */; };
 		81D7A4F71C134BB900D82B29 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D7A4F61C134BB900D82B29 /* iAd.framework */; };
+		81D7A4FE1C14CFF400D82B29 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D7A4FC1C14CFF400D82B29 /* Interface.storyboard */; };
+		81D7A5001C14CFF400D82B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D7A4FF1C14CFF400D82B29 /* Assets.xcassets */; };
+		81D7A5071C14CFF400D82B29 /* travelbuddywatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 81D7A5061C14CFF400D82B29 /* travelbuddywatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		81D7A50E1C14CFF400D82B29 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A50D1C14CFF400D82B29 /* InterfaceController.swift */; };
+		81D7A5101C14CFF400D82B29 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A50F1C14CFF400D82B29 /* ExtensionDelegate.swift */; };
+		81D7A5121C14CFF400D82B29 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5111C14CFF400D82B29 /* NotificationController.swift */; };
+		81D7A5141C14CFF400D82B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D7A5131C14CFF400D82B29 /* Assets.xcassets */; };
+		81D7A5181C14CFF400D82B29 /* travelbuddywatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */; };
+		81D7A5221C14E36500D82B29 /* EnlargedImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5211C14E36500D82B29 /* EnlargedImageInterfaceController.swift */; };
+		81D7A5251C15281100D82B29 /* IconMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5241C15281100D82B29 /* IconMapper.swift */; };
+		81D7A5261C152AC700D82B29 /* IconMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5241C15281100D82B29 /* IconMapper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81D7A5081C14CFF400D82B29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81683AC21C0A3758002A9817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D7A5051C14CFF400D82B29;
+			remoteInfo = "travelbuddywatch Extension";
+		};
+		81D7A5161C14CFF400D82B29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81683AC21C0A3758002A9817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D7A4F91C14CFF400D82B29;
+			remoteInfo = travelbuddywatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81D7A51C1C14CFF400D82B29 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				81D7A5071C14CFF400D82B29 /* travelbuddywatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D7A5201C14CFF400D82B29 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				81D7A5181C14CFF400D82B29 /* travelbuddywatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		81683ACA1C0A3758002A9817 /* travelbuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelbuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +79,19 @@
 		81683AD91C0A3759002A9817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81683AE11C0A61AC002A9817 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		81D7A4F61C134BB900D82B29 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelbuddywatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D7A4FD1C14CFF400D82B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		81D7A4FF1C14CFF400D82B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D7A5011C14CFF400D82B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D7A5061C14CFF400D82B29 /* travelbuddywatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "travelbuddywatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D7A50C1C14CFF400D82B29 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		81D7A50D1C14CFF400D82B29 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		81D7A50F1C14CFF400D82B29 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		81D7A5111C14CFF400D82B29 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		81D7A5131C14CFF400D82B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D7A5151C14CFF400D82B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D7A5211C14E36500D82B29 /* EnlargedImageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnlargedImageInterfaceController.swift; sourceTree = "<group>"; };
+		81D7A5241C15281100D82B29 /* IconMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81D7A5031C14CFF400D82B29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -45,6 +118,8 @@
 			children = (
 				81D7A4F61C134BB900D82B29 /* iAd.framework */,
 				81683ACC1C0A3758002A9817 /* travelbuddy */,
+				81D7A4FB1C14CFF400D82B29 /* travelbuddywatch */,
+				81D7A50A1C14CFF400D82B29 /* travelbuddywatch Extension */,
 				81683ACB1C0A3758002A9817 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				81683ACA1C0A3758002A9817 /* travelbuddy.app */,
+				81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */,
+				81D7A5061C14CFF400D82B29 /* travelbuddywatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				81683ACD1C0A3758002A9817 /* AppDelegate.swift */,
+				81D7A5231C1527F300D82B29 /* Models */,
 				81683ACF1C0A3759002A9817 /* ViewController.swift */,
 				81683AD11C0A3759002A9817 /* Main.storyboard */,
 				81683AE11C0A61AC002A9817 /* IconCell.swift */,
@@ -69,6 +147,46 @@
 				81683AD91C0A3759002A9817 /* Info.plist */,
 			);
 			path = travelbuddy;
+			sourceTree = "<group>";
+		};
+		81D7A4FB1C14CFF400D82B29 /* travelbuddywatch */ = {
+			isa = PBXGroup;
+			children = (
+				81D7A4FC1C14CFF400D82B29 /* Interface.storyboard */,
+				81D7A4FF1C14CFF400D82B29 /* Assets.xcassets */,
+				81D7A5011C14CFF400D82B29 /* Info.plist */,
+			);
+			path = travelbuddywatch;
+			sourceTree = "<group>";
+		};
+		81D7A50A1C14CFF400D82B29 /* travelbuddywatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81D7A50D1C14CFF400D82B29 /* InterfaceController.swift */,
+				81D7A5211C14E36500D82B29 /* EnlargedImageInterfaceController.swift */,
+				81D7A50F1C14CFF400D82B29 /* ExtensionDelegate.swift */,
+				81D7A5111C14CFF400D82B29 /* NotificationController.swift */,
+				81D7A5131C14CFF400D82B29 /* Assets.xcassets */,
+				81D7A5151C14CFF400D82B29 /* Info.plist */,
+				81D7A50B1C14CFF400D82B29 /* Supporting Files */,
+			);
+			path = "travelbuddywatch Extension";
+			sourceTree = "<group>";
+		};
+		81D7A50B1C14CFF400D82B29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81D7A50C1C14CFF400D82B29 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81D7A5231C1527F300D82B29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81D7A5241C15281100D82B29 /* IconMapper.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,15 +199,51 @@
 				81683AC61C0A3758002A9817 /* Sources */,
 				81683AC71C0A3758002A9817 /* Frameworks */,
 				81683AC81C0A3758002A9817 /* Resources */,
+				81D7A5201C14CFF400D82B29 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				81D7A5171C14CFF400D82B29 /* PBXTargetDependency */,
 			);
 			name = travelbuddy;
 			productName = travelbuddy;
 			productReference = 81683ACA1C0A3758002A9817 /* travelbuddy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		81D7A4F91C14CFF400D82B29 /* travelbuddywatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D7A51D1C14CFF400D82B29 /* Build configuration list for PBXNativeTarget "travelbuddywatch" */;
+			buildPhases = (
+				81D7A4F81C14CFF400D82B29 /* Resources */,
+				81D7A51C1C14CFF400D82B29 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D7A5091C14CFF400D82B29 /* PBXTargetDependency */,
+			);
+			name = travelbuddywatch;
+			productName = travelbuddywatch;
+			productReference = 81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		81D7A5051C14CFF400D82B29 /* travelbuddywatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D7A5191C14CFF400D82B29 /* Build configuration list for PBXNativeTarget "travelbuddywatch Extension" */;
+			buildPhases = (
+				81D7A5021C14CFF400D82B29 /* Sources */,
+				81D7A5031C14CFF400D82B29 /* Frameworks */,
+				81D7A5041C14CFF400D82B29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "travelbuddywatch Extension";
+			productName = "travelbuddywatch Extension";
+			productReference = 81D7A5061C14CFF400D82B29 /* travelbuddywatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +256,12 @@
 				ORGANIZATIONNAME = "Edmund Mai";
 				TargetAttributes = {
 					81683AC91C0A3758002A9817 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					81D7A4F91C14CFF400D82B29 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					81D7A5051C14CFF400D82B29 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -120,6 +280,8 @@
 			projectRoot = "";
 			targets = (
 				81683AC91C0A3758002A9817 /* travelbuddy */,
+				81D7A4F91C14CFF400D82B29 /* travelbuddywatch */,
+				81D7A5051C14CFF400D82B29 /* travelbuddywatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +297,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81D7A4F81C14CFF400D82B29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D7A5001C14CFF400D82B29 /* Assets.xcassets in Resources */,
+				81D7A4FE1C14CFF400D82B29 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D7A5041C14CFF400D82B29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D7A5141C14CFF400D82B29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -143,12 +322,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				81683AD01C0A3759002A9817 /* ViewController.swift in Sources */,
+				81D7A5251C15281100D82B29 /* IconMapper.swift in Sources */,
 				81683ACE1C0A3758002A9817 /* AppDelegate.swift in Sources */,
 				81683AE21C0A61AC002A9817 /* IconCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81D7A5021C14CFF400D82B29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D7A5121C14CFF400D82B29 /* NotificationController.swift in Sources */,
+				81D7A5261C152AC700D82B29 /* IconMapper.swift in Sources */,
+				81D7A5101C14CFF400D82B29 /* ExtensionDelegate.swift in Sources */,
+				81D7A50E1C14CFF400D82B29 /* InterfaceController.swift in Sources */,
+				81D7A5221C14E36500D82B29 /* EnlargedImageInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81D7A5091C14CFF400D82B29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D7A5051C14CFF400D82B29 /* travelbuddywatch Extension */;
+			targetProxy = 81D7A5081C14CFF400D82B29 /* PBXContainerItemProxy */;
+		};
+		81D7A5171C14CFF400D82B29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D7A4F91C14CFF400D82B29 /* travelbuddywatch */;
+			targetProxy = 81D7A5161C14CFF400D82B29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		81683AD11C0A3759002A9817 /* Main.storyboard */ = {
@@ -165,6 +370,14 @@
 				81683AD71C0A3759002A9817 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		81D7A4FC1C14CFF400D82B29 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81D7A4FD1C14CFF400D82B29 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -275,6 +488,66 @@
 			};
 			name = Release;
 		};
+		81D7A51A1C14CFF400D82B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "travelbuddywatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Edmund-Mai.travelbuddy.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		81D7A51B1C14CFF400D82B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "travelbuddywatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Edmund-Mai.travelbuddy.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		81D7A51E1C14CFF400D82B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = travelbuddywatch_Extension;
+				INFOPLIST_FILE = travelbuddywatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edmund-Mai.travelbuddy.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		81D7A51F1C14CFF400D82B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = travelbuddywatch_Extension;
+				INFOPLIST_FILE = travelbuddywatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edmund-Mai.travelbuddy.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -295,6 +568,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		81D7A5191C14CFF400D82B29 /* Build configuration list for PBXNativeTarget "travelbuddywatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D7A51A1C14CFF400D82B29 /* Debug */,
+				81D7A51B1C14CFF400D82B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		81D7A51D1C14CFF400D82B29 /* Build configuration list for PBXNativeTarget "travelbuddywatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D7A51E1C14CFF400D82B29 /* Debug */,
+				81D7A51F1C14CFF400D82B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
