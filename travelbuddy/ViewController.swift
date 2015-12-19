@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iAd
 
 class ViewController: UIViewController, ADBannerViewDelegate {
   
@@ -18,6 +19,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
     self.canDisplayBannerAds = true
     self.bannerView?.delegate = self
     self.bannerView?.hidden = true
+
   }
 
   override func didReceiveMemoryWarning() {
