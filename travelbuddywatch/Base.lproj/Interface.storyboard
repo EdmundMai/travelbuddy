@@ -59,7 +59,7 @@
                         </button>
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.58194009989999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <edgeInsets key="margins" left="1" right="1" top="10" bottom="0.0"/>
+                    <edgeInsets key="margins" left="1" right="1" top="9" bottom="9"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="130" y="247.5"/>
