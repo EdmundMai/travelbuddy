@@ -8,8 +8,11 @@
 
 import UIKit
 import iAd
+import CoreLocation
 
 class ViewController: UIViewController, ADBannerViewDelegate {
+  
+  let locationManager = CLLocationManager()
   
   var bannerView: ADBannerView?
   
@@ -19,7 +22,10 @@ class ViewController: UIViewController, ADBannerViewDelegate {
     self.canDisplayBannerAds = true
     self.bannerView?.delegate = self
     self.bannerView?.hidden = true
-
+    locationManager.delegate = self
+    locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+    locationManager.requestAlwaysAuthorization()
+    locationManager.startUpdatingLocation()
   }
 
   override func didReceiveMemoryWarning() {
@@ -47,6 +53,13 @@ class ViewController: UIViewController, ADBannerViewDelegate {
   }
 
 }
+
+extension ViewController: CLLocationManagerDelegate {
+  func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    print("locations = \(locations)")
+  }
+}
+
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -87,7 +100,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     enlargedView.addSubview(enlargedImageView)
     
     let translationTextLabel = UILabel(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height * 4/5, UIScreen.mainScreen().bounds.width*0.8, 30))
-    translationTextLabel.text = iconMapper[indexPath.row]!
+    translationTextLabel.text = "請問廁所在哪裡？"//iconMapper[indexPath.row]!
     translationTextLabel.font = UIFont.systemFontOfSize(25)
     translationTextLabel.textColor = UIColor.whiteColor()
     translationTextLabel.textAlignment = NSTextAlignment.Center
