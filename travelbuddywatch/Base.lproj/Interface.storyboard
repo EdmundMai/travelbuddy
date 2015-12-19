@@ -10,70 +10,58 @@
             <objects>
                 <controller backgroundImage="background" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="travelbuddywatch" customModuleProvider="target">
                     <items>
-                        <group width="1" height="0.33300000000000002" alignment="left" id="5e2-3F-46i">
-                            <items>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="Toilet" id="CcR-7o-2Rd">
-                                    <connections>
-                                        <action selector="tapped" destination="AgC-eL-Hgc" id="goY-pG-zO6"/>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="0" id="YGX-US-O4K"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="ATM" id="Q8J-sY-0M6">
-                                    <connections>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="1" id="Exe-2D-3D2"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="Food" id="pKC-lw-QlX">
-                                    <connections>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="2" id="y2A-6x-t6R"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="0.33300000000000002" alignment="left" id="h9E-xC-tkt">
-                            <items>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="Outlet" id="LiQ-IS-bEJ">
-                                    <connections>
-                                        <action selector="tapped" destination="AgC-eL-Hgc" id="vSl-OW-WmI"/>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="3" id="eYS-Zh-MZr"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="Subway" id="3ly-U8-s6z">
-                                    <connections>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="4" id="4MH-Na-Fdt"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="Hotel" id="fwS-eF-gZW">
-                                    <connections>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="5" id="VtV-rj-k8W"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="136" alignment="left" id="Muq-5I-rBJ">
-                            <items>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="Airport" id="GbR-NM-fjm">
-                                    <connections>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="6" id="UNP-gC-WNU"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="Taxi" id="wHh-Hc-BvO">
-                                    <connections>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="7" id="bF0-iR-FDg"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33300000000000002" height="1" alignment="left" backgroundImage="Wifi" id="UkT-LQ-OF3">
-                                    <connections>
-                                        <segue destination="LYn-VX-ErM" kind="push" identifier="8" id="BL5-gO-MZz"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
+                        <button width="100" height="100" alignment="center" backgroundImage="Toilet" id="CcR-7o-2Rd">
+                            <connections>
+                                <action selector="tapped" destination="AgC-eL-Hgc" id="goY-pG-zO6"/>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="0" id="YGX-US-O4K"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="ATM" id="Q8J-sY-0M6">
+                            <connections>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="1" id="Exe-2D-3D2"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="Food" id="pKC-lw-QlX">
+                            <connections>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="2" id="y2A-6x-t6R"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="Outlet" id="LiQ-IS-bEJ">
+                            <connections>
+                                <action selector="tapped" destination="AgC-eL-Hgc" id="vSl-OW-WmI"/>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="3" id="eYS-Zh-MZr"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="Subway" id="3ly-U8-s6z">
+                            <connections>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="4" id="4MH-Na-Fdt"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="Hotel" id="fwS-eF-gZW">
+                            <connections>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="5" id="VtV-rj-k8W"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="Airport" id="GbR-NM-fjm">
+                            <connections>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="6" id="UNP-gC-WNU"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="Taxi" id="wHh-Hc-BvO">
+                            <connections>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="7" id="bF0-iR-FDg"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="Wifi" id="UkT-LQ-OF3">
+                            <connections>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="8" id="BL5-gO-MZz"/>
+                            </connections>
+                        </button>
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.58194009989999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="130" y="271"/>
+            <point key="canvasLocation" x="130" y="247.5"/>
         </scene>
         <!--Enlarged Image Interface Controller-->
         <scene sceneID="gLW-UA-Z5W">
@@ -119,6 +107,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bF0-iR-FDg"/>
+        <segue reference="y2A-6x-t6R"/>
     </inferredMetricsTieBreakers>
 </document>
