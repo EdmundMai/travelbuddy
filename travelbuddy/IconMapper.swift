@@ -12,10 +12,10 @@ let iconMapper = [
   0: "Toilet",
   1: "ATM",
   2: "Food",
-  3: "Outlet",
+  3: "Taxi",
   4: "Subway",
-  5: "Hotel",
-  6: "Airport",
-  7: "Taxi",
+  5: "Airport",
+  6: "Outlet",
+  7: "Hotel",
   8: "Wifi"
 ]

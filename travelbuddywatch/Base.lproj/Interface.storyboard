@@ -26,10 +26,9 @@
                                 <segue destination="LYn-VX-ErM" kind="push" identifier="2" id="y2A-6x-t6R"/>
                             </connections>
                         </button>
-                        <button width="100" height="100" alignment="center" backgroundImage="Outlet" id="LiQ-IS-bEJ">
+                        <button width="100" height="100" alignment="center" backgroundImage="Taxi" id="wHh-Hc-BvO">
                             <connections>
-                                <action selector="tapped" destination="AgC-eL-Hgc" id="vSl-OW-WmI"/>
-                                <segue destination="LYn-VX-ErM" kind="push" identifier="3" id="eYS-Zh-MZr"/>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="7" id="bF0-iR-FDg"/>
                             </connections>
                         </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Subway" id="3ly-U8-s6z">
@@ -37,19 +36,20 @@
                                 <segue destination="LYn-VX-ErM" kind="push" identifier="4" id="4MH-Na-Fdt"/>
                             </connections>
                         </button>
-                        <button width="100" height="100" alignment="center" backgroundImage="Hotel" id="fwS-eF-gZW">
-                            <connections>
-                                <segue destination="LYn-VX-ErM" kind="push" identifier="5" id="VtV-rj-k8W"/>
-                            </connections>
-                        </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Airport" id="GbR-NM-fjm">
                             <connections>
                                 <segue destination="LYn-VX-ErM" kind="push" identifier="6" id="UNP-gC-WNU"/>
                             </connections>
                         </button>
-                        <button width="100" height="100" alignment="center" backgroundImage="Taxi" id="wHh-Hc-BvO">
+                        <button width="100" height="100" alignment="center" backgroundImage="Outlet" id="LiQ-IS-bEJ">
                             <connections>
-                                <segue destination="LYn-VX-ErM" kind="push" identifier="7" id="bF0-iR-FDg"/>
+                                <action selector="tapped" destination="AgC-eL-Hgc" id="vSl-OW-WmI"/>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="3" id="eYS-Zh-MZr"/>
+                            </connections>
+                        </button>
+                        <button width="100" height="100" alignment="center" backgroundImage="Hotel" id="fwS-eF-gZW">
+                            <connections>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="5" id="VtV-rj-k8W"/>
                             </connections>
                         </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Wifi" id="UkT-LQ-OF3">
@@ -59,6 +59,7 @@
                         </button>
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.58194009989999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="margins" left="1" right="1" top="10" bottom="0.0"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="130" y="247.5"/>
@@ -73,7 +74,7 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                     </items>
-                    <color key="backgroundColor" red="0.0" green="0.58194009989999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.043830248410000001" green="0.72826555429999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="image" destination="qnQ-ee-6pb" id="kqC-mo-T67"/>
                         <outlet property="label" destination="da6-v7-BC7" id="MEg-iy-Pba"/>

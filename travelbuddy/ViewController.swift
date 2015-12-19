@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import iAd
 
 class ViewController: UIViewController, ADBannerViewDelegate {
   
@@ -78,7 +77,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     let cell: IconCell = collectionView.cellForItemAtIndexPath(indexPath) as! IconCell
     
     let enlargedView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
-    enlargedView.backgroundColor = UIColor(red: (23/255.0), green: (170/255.0), blue: (179/255.0), alpha: 1.0)
+    enlargedView.backgroundColor = UIColor(red: (0/255.0), green: (169/255.0), blue: (255/255.0), alpha: 1.0)
     
     let enlargedImageView = UIImageView(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height/4, UIScreen.mainScreen().bounds.width*0.8, UIScreen.mainScreen().bounds.height/2))
     enlargedImageView.image = cell.imageView.image
