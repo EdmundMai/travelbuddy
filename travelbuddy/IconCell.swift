@@ -10,5 +10,6 @@ import UIKit
 
 class IconCell: UICollectionViewCell {
     
+  @IBOutlet weak var imageLabel: UILabel!
   @IBOutlet weak var imageView: UIImageView!
 }

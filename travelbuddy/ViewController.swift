@@ -15,6 +15,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     self.canDisplayBannerAds = true
     self.bannerView?.delegate = self
     self.bannerView?.hidden = true
@@ -55,6 +56,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     let cell: IconCell = collectionView.dequeueReusableCellWithReuseIdentifier("icon", forIndexPath: indexPath) as! IconCell
     print(indexPath.row)
     cell.imageView.image = UIImage(named: iconMapper[indexPath.row]!)
+    cell.imageLabel.text = iconMapper[indexPath.row]!
     
     return cell
     
@@ -72,12 +74,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     cell.imageView.alpha = 1.0
   }
   
-  
   func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     let cell: IconCell = collectionView.cellForItemAtIndexPath(indexPath) as! IconCell
     
     let enlargedView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
-    enlargedView.backgroundColor = UIColor(red: 0, green: 111, blue: 234, alpha: 1.0)
+    enlargedView.backgroundColor = UIColor(red: (23/255.0), green: (170/255.0), blue: (179/255.0), alpha: 1.0)
     
     let enlargedImageView = UIImageView(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height/4, UIScreen.mainScreen().bounds.width*0.8, UIScreen.mainScreen().bounds.height/2))
     enlargedImageView.image = cell.imageView.image
@@ -87,8 +88,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     let translationTextLabel = UILabel(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height * 4/5, UIScreen.mainScreen().bounds.width*0.8, 30))
     translationTextLabel.text = iconMapper[indexPath.row]!
     translationTextLabel.font = UIFont.systemFontOfSize(25)
-    
-
+    translationTextLabel.textColor = UIColor.whiteColor()
     translationTextLabel.textAlignment = NSTextAlignment.Center
     
     enlargedView.addSubview(translationTextLabel)
