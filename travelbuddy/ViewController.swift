@@ -14,10 +14,17 @@ class ViewController: UIViewController, ADBannerViewDelegate {
   
   let locationManager = CLLocationManager()
   
+  var languageOfCurrentCountry = "English"
+  
   var bannerView: ADBannerView?
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    let locale = NSLocale.currentLocale()
+    let countryCode = locale.objectForKey(NSLocaleCountryCode) as! String
+    LanguageManager.sharedInstance.setLanguageFor("languageOfDevice", countryCode: countryCode)
+    
     self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     self.canDisplayBannerAds = true
     self.bannerView?.delegate = self
@@ -55,8 +62,18 @@ class ViewController: UIViewController, ADBannerViewDelegate {
 }
 
 extension ViewController: CLLocationManagerDelegate {
-  func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    print("locations = \(locations)")
+  func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+    locationManager.stopUpdatingLocation()
+    
+    let geoCoder = CLGeocoder()
+    geoCoder.reverseGeocodeLocation(newLocation, completionHandler: { (placemarks, error) -> Void in
+      if error != nil {
+        return
+      } else {
+        let placemark = placemarks![0]
+        LanguageManager.sharedInstance.setLanguageFor("languageOfCurrentCountry", countryCode: placemark.ISOcountryCode!)
+      }
+    })
   }
 }
 
@@ -68,9 +85,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     let cell: IconCell = collectionView.dequeueReusableCellWithReuseIdentifier("icon", forIndexPath: indexPath) as! IconCell
-    print(indexPath.row)
     cell.imageView.image = UIImage(named: iconMapper[indexPath.row]!)
-    cell.imageLabel.text = iconMapper[indexPath.row]!
+    
+    let keyword = iconMapper[indexPath.row]!
+    cell.imageLabel.text = LanguageManager.sharedInstance.wordTranslation(keyword)
     
     return cell
     
@@ -94,15 +112,18 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     let enlargedView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
     enlargedView.backgroundColor = UIColor(red: (0/255.0), green: (169/255.0), blue: (255/255.0), alpha: 1.0)
     
-    let enlargedImageView = UIImageView(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height/4, UIScreen.mainScreen().bounds.width*0.8, UIScreen.mainScreen().bounds.height/2))
+    let enlargedImageView = UIImageView(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height/5, UIScreen.mainScreen().bounds.width*0.8, UIScreen.mainScreen().bounds.height/2))
     enlargedImageView.image = cell.imageView.image
     
     enlargedView.addSubview(enlargedImageView)
     
-    let translationTextLabel = UILabel(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height * 4/5, UIScreen.mainScreen().bounds.width*0.8, 30))
-    translationTextLabel.text = "請問廁所在哪裡？"//iconMapper[indexPath.row]!
-    translationTextLabel.font = UIFont.systemFontOfSize(25)
+    let translationTextLabel = UILabel(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height * 4/5.5, UIScreen.mainScreen().bounds.width*0.8, UIScreen.mainScreen().bounds.height/4))
+    let keyword = iconMapper[indexPath.row]!
+    translationTextLabel.text = LanguageManager.sharedInstance.sentenceTranslation(keyword)
+    translationTextLabel.font = UIFont.systemFontOfSize(27)
+    translationTextLabel.numberOfLines = 3
     translationTextLabel.textColor = UIColor.whiteColor()
+
     translationTextLabel.textAlignment = NSTextAlignment.Center
     
     enlargedView.addSubview(translationTextLabel)

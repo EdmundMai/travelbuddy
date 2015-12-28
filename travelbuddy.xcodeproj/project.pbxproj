@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815267891C3065950039DDA4 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815267881C3065950039DDA4 /* LanguageManager.swift */; };
 		81683ACE1C0A3758002A9817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81683ACD1C0A3758002A9817 /* AppDelegate.swift */; };
 		81683AD01C0A3759002A9817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81683ACF1C0A3759002A9817 /* ViewController.swift */; };
 		81683AD31C0A3759002A9817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81683AD11C0A3759002A9817 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		815267881C3065950039DDA4 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		81683ACA1C0A3758002A9817 /* travelbuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelbuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81683ACD1C0A3758002A9817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81683ACF1C0A3759002A9817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				81D7A5241C15281100D82B29 /* IconMapper.swift */,
+				815267881C3065950039DDA4 /* LanguageManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				81D7A5251C15281100D82B29 /* IconMapper.swift in Sources */,
 				81683ACE1C0A3758002A9817 /* AppDelegate.swift in Sources */,
 				81683AE21C0A61AC002A9817 /* IconCell.swift in Sources */,
+				815267891C3065950039DDA4 /* LanguageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +580,7 @@
 				81D7A51B1C14CFF400D82B29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81D7A51D1C14CFF400D82B29 /* Build configuration list for PBXNativeTarget "travelbuddywatch" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +589,7 @@
 				81D7A51F1C14CFF400D82B29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
