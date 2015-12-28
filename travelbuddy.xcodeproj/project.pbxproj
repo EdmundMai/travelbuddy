@@ -26,6 +26,7 @@
 		81D7A5221C14E36500D82B29 /* EnlargedImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5211C14E36500D82B29 /* EnlargedImageInterfaceController.swift */; };
 		81D7A5251C15281100D82B29 /* IconMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5241C15281100D82B29 /* IconMapper.swift */; };
 		81D7A5261C152AC700D82B29 /* IconMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5241C15281100D82B29 /* IconMapper.swift */; };
+		81D9F4FA1C3100AF00B2D455 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815267881C3065950039DDA4 /* LanguageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,6 +340,7 @@
 				81D7A5121C14CFF400D82B29 /* NotificationController.swift in Sources */,
 				81D7A5261C152AC700D82B29 /* IconMapper.swift in Sources */,
 				81D7A5101C14CFF400D82B29 /* ExtensionDelegate.swift in Sources */,
+				81D9F4FA1C3100AF00B2D455 /* LanguageManager.swift in Sources */,
 				81D7A50E1C14CFF400D82B29 /* InterfaceController.swift in Sources */,
 				81D7A5221C14E36500D82B29 /* EnlargedImageInterfaceController.swift in Sources */,
 			);

@@ -28,7 +28,7 @@
                         </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Taxi" id="wHh-Hc-BvO">
                             <connections>
-                                <segue destination="LYn-VX-ErM" kind="push" identifier="7" id="bF0-iR-FDg"/>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="3" id="bF0-iR-FDg"/>
                             </connections>
                         </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Subway" id="3ly-U8-s6z">
@@ -38,18 +38,18 @@
                         </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Airport" id="GbR-NM-fjm">
                             <connections>
-                                <segue destination="LYn-VX-ErM" kind="push" identifier="6" id="UNP-gC-WNU"/>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="5" id="UNP-gC-WNU"/>
                             </connections>
                         </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Outlet" id="LiQ-IS-bEJ">
                             <connections>
                                 <action selector="tapped" destination="AgC-eL-Hgc" id="vSl-OW-WmI"/>
-                                <segue destination="LYn-VX-ErM" kind="push" identifier="3" id="eYS-Zh-MZr"/>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="6" id="eYS-Zh-MZr"/>
                             </connections>
                         </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Hotel" id="fwS-eF-gZW">
                             <connections>
-                                <segue destination="LYn-VX-ErM" kind="push" identifier="5" id="VtV-rj-k8W"/>
+                                <segue destination="LYn-VX-ErM" kind="push" identifier="7" id="VtV-rj-k8W"/>
                             </connections>
                         </button>
                         <button width="100" height="100" alignment="center" backgroundImage="Wifi" id="UkT-LQ-OF3">
@@ -108,6 +108,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y2A-6x-t6R"/>
+        <segue reference="eYS-Zh-MZr"/>
     </inferredMetricsTieBreakers>
 </document>

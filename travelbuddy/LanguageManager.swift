@@ -248,4 +248,9 @@ class LanguageManager: NSObject {
     let words = wordTranslations[languageOfDevice]!
     return words[word]!
   }
+  
+  func watchTranslation(word: String) -> String {
+    let words = wordTranslations[languageOfCurrentCountry]!
+    return words[word]!
+  }
 }

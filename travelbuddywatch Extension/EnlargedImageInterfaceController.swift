@@ -19,24 +19,11 @@ class EnlargedImageInterfaceController: WKInterfaceController {
     super.awakeWithContext(context)
     
     let index = Int(context as! String)
-    let imageName = iconMapper[index!]!
+    let keyword = iconMapper[index!]!
     
-    let enlargedImage = UIImage(named: imageName)
-  
+    let enlargedImage = UIImage(named: keyword)
     image.setImage(enlargedImage)
-    label.setText(imageName)
-      
-      // Configure interface objects here.
+    
+    label.setText(LanguageManager.sharedInstance.wordTranslation(keyword))
   }
-
-  override func willActivate() {
-      // This method is called when watch view controller is about to be visible to user
-    super.willActivate()
-  }
-
-  override func didDeactivate() {
-      // This method is called when watch view controller is no longer visible
-    super.didDeactivate()
-  }
-
 }
