@@ -81,6 +81,7 @@
 		81683AD71C0A3759002A9817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81683AD91C0A3759002A9817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81683AE11C0A61AC002A9817 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		81AFEBB91C31A8A2005F90B6 /* KoreaLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KoreaLocation.gpx; sourceTree = "<group>"; };
 		81D7A4F61C134BB900D82B29 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelbuddywatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D7A4FD1C14CFF400D82B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 				81683ACD1C0A3758002A9817 /* AppDelegate.swift */,
 				81D7A5231C1527F300D82B29 /* Models */,
 				81683ACF1C0A3759002A9817 /* ViewController.swift */,
+				81AFEBB91C31A8A2005F90B6 /* KoreaLocation.gpx */,
 				81683AD11C0A3759002A9817 /* Main.storyboard */,
 				81683AE11C0A61AC002A9817 /* IconCell.swift */,
 				81683AD41C0A3759002A9817 /* Assets.xcassets */,
