@@ -86,9 +86,9 @@ class LanguageManager: NSObject {
     "ATM": "एटीएम",
     "Food": "भोजन",
     "Taxi": "टैक्सी",
-    "Subway": "भूमिगत लौहपथ गामिनी",
+    "Subway": "मेट्रो",
     "Airport": "हवाई अड्डे",
-    "Outlet": "बिजली के आउटलेट",
+    "Outlet": "विद्युत निकास",
     "Hotel": "होटल",
     "Wifi": " वाईफ़ाई"
   ]
@@ -100,9 +100,9 @@ class LanguageManager: NSObject {
     "Taxi": "Where can I find a taxi around here?",
     "Subway": "Where would I find a subway?",
     "Airport": "Please take me to the airport.",
-    "Outlet": "Would you know where I could find an electric outlet?",
+    "Outlet": "Would you know where I can find an electric outlet?",
     "Hotel": "Could you please help me find my hotel?",
-    "Wifi": "Would you know where I can find wifi around here?"
+    "Wifi": "Would you know where I can find wifi?"
   ]
   
   private let russianWordTranslations = [
