@@ -22,7 +22,7 @@
 		81D7A5101C14CFF400D82B29 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A50F1C14CFF400D82B29 /* ExtensionDelegate.swift */; };
 		81D7A5121C14CFF400D82B29 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5111C14CFF400D82B29 /* NotificationController.swift */; };
 		81D7A5141C14CFF400D82B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D7A5131C14CFF400D82B29 /* Assets.xcassets */; };
-		81D7A5181C14CFF400D82B29 /* travelbuddywatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */; };
+		81D7A5181C14CFF400D82B29 /* Trip Icons.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81D7A4FA1C14CFF400D82B29 /* Trip Icons.app */; };
 		81D7A5221C14E36500D82B29 /* EnlargedImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5211C14E36500D82B29 /* EnlargedImageInterfaceController.swift */; };
 		81D7A5251C15281100D82B29 /* IconMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5241C15281100D82B29 /* IconMapper.swift */; };
 		81D7A5261C152AC700D82B29 /* IconMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D7A5241C15281100D82B29 /* IconMapper.swift */; };
@@ -64,7 +64,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				81D7A5181C14CFF400D82B29 /* travelbuddywatch.app in Embed Watch Content */,
+				81D7A5181C14CFF400D82B29 /* Trip Icons.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +83,7 @@
 		81683AE11C0A61AC002A9817 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		81AFEBB91C31A8A2005F90B6 /* KoreaLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KoreaLocation.gpx; sourceTree = "<group>"; };
 		81D7A4F61C134BB900D82B29 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelbuddywatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D7A4FA1C14CFF400D82B29 /* Trip Icons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trip Icons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D7A4FD1C14CFF400D82B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		81D7A4FF1C14CFF400D82B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81D7A5011C14CFF400D82B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				81683ACA1C0A3758002A9817 /* travelbuddy.app */,
-				81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */,
+				81D7A4FA1C14CFF400D82B29 /* Trip Icons.app */,
 				81D7A5061C14CFF400D82B29 /* travelbuddywatch Extension.appex */,
 			);
 			name = Products;
@@ -231,7 +231,7 @@
 			);
 			name = travelbuddywatch;
 			productName = travelbuddywatch;
-			productReference = 81D7A4FA1C14CFF400D82B29 /* travelbuddywatch.app */;
+			productReference = 81D7A4FA1C14CFF400D82B29 /* Trip Icons.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		81D7A5051C14CFF400D82B29 /* travelbuddywatch Extension */ = {
@@ -480,7 +480,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tripicons;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Trip Icons";
 			};
 			name = Debug;
 		};
@@ -492,7 +492,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tripicons;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Trip Icons";
 			};
 			name = Release;
 		};
@@ -532,7 +532,7 @@
 				IBSC_MODULE = travelbuddywatch_Extension;
 				INFOPLIST_FILE = travelbuddywatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = tripicons.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Trip Icons";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -548,7 +548,7 @@
 				IBSC_MODULE = travelbuddywatch_Extension;
 				INFOPLIST_FILE = travelbuddywatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = tripicons.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Trip Icons";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
