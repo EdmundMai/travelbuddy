@@ -73,7 +73,7 @@
 
 /* Begin PBXFileReference section */
 		815267881C3065950039DDA4 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
-		81683ACA1C0A3758002A9817 /* travelbuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelbuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81683ACA1C0A3758002A9817 /* Trip Icons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trip Icons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81683ACD1C0A3758002A9817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81683ACF1C0A3759002A9817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81683AD21C0A3759002A9817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		81683ACB1C0A3758002A9817 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81683ACA1C0A3758002A9817 /* travelbuddy.app */,
+				81683ACA1C0A3758002A9817 /* Trip Icons.app */,
 				81D7A4FA1C14CFF400D82B29 /* Trip Icons.app */,
 				81D7A5061C14CFF400D82B29 /* travelbuddywatch Extension.appex */,
 			);
@@ -214,7 +214,7 @@
 			);
 			name = travelbuddy;
 			productName = travelbuddy;
-			productReference = 81683ACA1C0A3758002A9817 /* travelbuddy.app */;
+			productReference = 81683ACA1C0A3758002A9817 /* Trip Icons.app */;
 			productType = "com.apple.product-type.application";
 		};
 		81D7A4F91C14CFF400D82B29 /* travelbuddywatch */ = {

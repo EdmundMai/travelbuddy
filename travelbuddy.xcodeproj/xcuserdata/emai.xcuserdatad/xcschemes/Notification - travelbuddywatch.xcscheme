@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81D7A4F91C14CFF400D82B29"
-               BuildableName = "travelbuddywatch.app"
+               BuildableName = "Trip Icons.app"
                BlueprintName = "travelbuddywatch"
                ReferencedContainer = "container:travelbuddy.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81683AC91C0A3758002A9817"
-               BuildableName = "travelbuddy.app"
+               BuildableName = "Trip Icons.app"
                BlueprintName = "travelbuddy"
                ReferencedContainer = "container:travelbuddy.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81D7A4F91C14CFF400D82B29"
-            BuildableName = "travelbuddywatch.app"
+            BuildableName = "Trip Icons.app"
             BlueprintName = "travelbuddywatch"
             ReferencedContainer = "container:travelbuddy.xcodeproj">
          </BuildableReference>
@@ -88,7 +88,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81D7A4F91C14CFF400D82B29"
-            BuildableName = "travelbuddywatch.app"
+            BuildableName = "Trip Icons.app"
             BlueprintName = "travelbuddywatch"
             ReferencedContainer = "container:travelbuddy.xcodeproj">
          </BuildableReference>
@@ -97,7 +97,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81D7A4F91C14CFF400D82B29"
-            BuildableName = "travelbuddywatch.app"
+            BuildableName = "Trip Icons.app"
             BlueprintName = "travelbuddywatch"
             ReferencedContainer = "container:travelbuddy.xcodeproj">
          </BuildableReference>
@@ -120,7 +120,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81D7A4F91C14CFF400D82B29"
-            BuildableName = "travelbuddywatch.app"
+            BuildableName = "Trip Icons.app"
             BlueprintName = "travelbuddywatch"
             ReferencedContainer = "container:travelbuddy.xcodeproj">
          </BuildableReference>
@@ -129,7 +129,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81D7A4F91C14CFF400D82B29"
-            BuildableName = "travelbuddywatch.app"
+            BuildableName = "Trip Icons.app"
             BlueprintName = "travelbuddywatch"
             ReferencedContainer = "container:travelbuddy.xcodeproj">
          </BuildableReference>

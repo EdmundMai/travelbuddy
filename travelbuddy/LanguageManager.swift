@@ -20,6 +20,8 @@ class LanguageManager: NSObject {
   private let japaneseSpeakingCountries = ["JP"]
   private let hindiSpeakingCountries = ["IN"]
   private let russianSpeakingCountries = ["UA", "RU", "KZ", "BY", "KG", "TJ"]
+  private let portugeseSpeakingCountries = ["BR", "PT", "AO"]
+  private let thaiSpeakingCountries = ["TH"]
   
   private let englishWordTranslations = [
     "Toilet": "Toilet",
@@ -43,6 +45,30 @@ class LanguageManager: NSObject {
     "Outlet": "전기 콘센트",
     "Hotel": "호텔",
     "Wifi": "와이파이"
+  ]
+  
+  private let thaiWordTranslations = [
+    "Toilet": "ห้องน้ำ",
+    "ATM": "ATM",
+    "Food": "อาหาร",
+    "Taxi": "แท็กซี่",
+    "Subway": "สถานีรถไฟใต้ดิน",
+    "Airport": "สนามบิน",
+    "Outlet": "เอ้าเลทขายอุปกรณ์อิเล็กทรอนิกส์",
+    "Hotel": "โรงแรม",
+    "Wifi": "Wifi"
+  ]
+  
+  private let portugeseWordTranslations = [
+    "Toilet": "Banheiro",
+    "ATM": "Caixa Eletrônico",
+    "Food": "Comida",
+    "Taxi": "Taxi",
+    "Subway": "Metrô",
+    "Airport": "Aeroporto",
+    "Outlet": "Tomada",
+    "Hotel": "Hotel",
+    "Wifi": "Wifi"
   ]
   
   private let spanishWordTranslations = [
@@ -128,6 +154,18 @@ class LanguageManager: NSObject {
     "Hotel": "Можете ли вы помочь мне найти мою гостиницу?",
     "Wifi": "Где я могу найти WiFi?"
   ]
+
+  private let portugeseSentenceTranslations = [
+    "Toilet": "Onde é o banheiro?",
+    "ATM": "Onde tem um caixa eletrônico?",
+    "Food": "Tem algum lugar para comer aqui por perto?",
+    "Taxi": "Onde posso pegar um taxi aqui perto?",
+    "Subway": "Onde é a estação de metro?",
+    "Airport": "Para o aeroporto por favor.",
+    "Outlet": "Tem alguma tomada que eu possa usar?",
+    "Hotel": "Você pode me ajudar a achar meu Hotel?",
+    "Wifi": "Tem wifi (internet) aqui perto?"
+  ]
   
   private let koreanSentenceTranslations = [
     "Toilet": "근처에 화장실이 어디에 있어요?",
@@ -139,6 +177,18 @@ class LanguageManager: NSObject {
     "Outlet": "혹시, 전기 콘센트가 어디에 있는지 아세요?",
     "Hotel": "이 호텔에 어떻게 가는지 아세요?",
     "Wifi": "혹시, 와이파이 이용할 수 있는 곳을 아세요?"
+  ]
+  
+  private let thaiSentenceTranslations = [
+    "Toilet": "ขอโทษค่ะ/ครับ ห้องน้ำไปทางไหนค่ะ/ครับ",
+    "ATM": "ขอโทษค่ะ/ครับ จะหาตู้ ATM ได้ที่ไหนบ้างคะ/ครับ",
+    "Food": "จะหาของกินแถวนี้ได้ที่ไหนบ้างคะ/ครับ",
+    "Taxi": "จะหารถแท็กซี่ได้ที่ไหนบ้างคะ/ครับ",
+    "Subway": "สถนีรถไฟใต้ดินที่ใกล้ที่สุดอยู่ตรงไหนคะ/ครับ",
+    "Airport": "กรุณาพาฉันไปสนามบินหน่อยคะ/ครับ",
+    "Outlet": "ที่นี้มีร้านเอ้าแลทเกี่ยวอุปกรณือิเล็กทรอนิกส์ไหมคะ/ครับ",
+    "Hotel": "คุณช่วยฉันหาโรงแรมของฉันหน่อยได้ไหมคะ/ครับ",
+    "Wifi": "ฉันจะหาสัญญาณ wifi ได้ที่ไหนบ้างคะ/ครับ"
   ]
   
   private let spanishSentenceTranslations = [
@@ -197,7 +247,9 @@ class LanguageManager: NSObject {
       "Japanese": japaneseSentenceTranslations,
       "Spanish": spanishSentenceTranslations,
       "Hindi": hindiSentenceTranslations,
-      "Russian": russianSentenceTranslations
+      "Russian": russianSentenceTranslations,
+      "Portugese": portugeseSentenceTranslations,
+      "Thai": thaiSentenceTranslations
     ]
   }
   
@@ -209,7 +261,9 @@ class LanguageManager: NSObject {
       "Japanese": japaneseWordTranslations,
       "Spanish": spanishWordTranslations,
       "Hindi": hindiWordTranslations,
-      "Russian": russianWordTranslations
+      "Russian": russianWordTranslations,
+      "Portugese": portugeseWordTranslations,
+      "Thai": thaiWordTranslations
     ]
   }
   
@@ -236,6 +290,14 @@ class LanguageManager: NSObject {
     
     if russianSpeakingCountries.contains(countryCode) {
       self.setValue("Russian", forKey: languageProperty)
+    }
+    
+    if portugeseSpeakingCountries.contains(countryCode) {
+      self.setValue("Portugese", forKey: languageProperty)
+    }
+    
+    if thaiSpeakingCountries.contains(countryCode) {
+      self.setValue("Thai", forKey: languageProperty)
     }
   }
   
