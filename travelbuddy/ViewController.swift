@@ -41,11 +41,13 @@ class ViewController: UIViewController, ADBannerViewDelegate {
 
   func largeImageTapped(sender: UITapGestureRecognizer) {
     let enlargedView = sender.view!
-    UIView.animateWithDuration(0.2, delay: 0.0, options: .CurveEaseInEaseOut, animations: {
+    
+    UIView.animateWithDuration(0.2, delay: 0.0, options: .CurveEaseInOut, animations: {
       enlargedView.alpha = 0.0
-    }, completion: {
-      enlargedView.removeFromSuperview()
+      }, completion: { (complete) in
+        enlargedView.removeFromSuperview()
     })
+
   }
   
   func bannerViewDidLoadAd(banner: ADBannerView!) {
@@ -114,7 +116,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     enlargedView.backgroundColor = UIColor(red: (0/255.0), green: (169/255.0), blue: (255/255.0), alpha: 1.0)
     
     let enlargedImageView = UIImageView(frame: CGRectMake(UIScreen.mainScreen().bounds.width*0.1, UIScreen.mainScreen().bounds.height/5, UIScreen.mainScreen().bounds.width*0.8, UIScreen.mainScreen().bounds.height/2))
-    enlargedImageView.contentMode = UIViewContentModeScaleAspectFit
+    enlargedImageView.contentMode = UIViewContentMode.ScaleAspectFit
     enlargedImageView.image = cell.imageView.image
     
     enlargedView.addSubview(enlargedImageView)
@@ -136,7 +138,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     enlargedView.alpha = 0.0
     self.view.addSubview(enlargedView)
     
-    UIView.animateWithDuration(0.2, delay: 0.0, options: .CurveEaseInEaseOut, animations: {
+    UIView.animateWithDuration(0.2, delay: 0.0, options: .CurveEaseInOut, animations: {
       enlargedView.alpha = 1.0
     }, completion: nil)
   }
