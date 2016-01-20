@@ -24,6 +24,6 @@ class EnlargedImageInterfaceController: WKInterfaceController {
     let enlargedImage = UIImage(named: keyword)
     image.setImage(enlargedImage)
     
-    label.setText(LanguageManager.sharedInstance.wordTranslation(keyword))
+    label.setText(LanguageManager.sharedInstance.watchTranslation(keyword))
   }
 }
