@@ -58,7 +58,7 @@
                             </connections>
                         </button>
                     </items>
-                    <color key="backgroundColor" red="0.043830248410000001" green="0.72826555429999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.58194009989999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <edgeInsets key="margins" left="1" right="1" top="9" bottom="9"/>
                 </controller>
             </objects>
@@ -74,7 +74,7 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                     </items>
-                    <color key="backgroundColor" red="0.043830248410000001" green="0.72826555429999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.58194009989999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="image" destination="qnQ-ee-6pb" id="kqC-mo-T67"/>
                         <outlet property="label" destination="da6-v7-BC7" id="MEg-iy-Pba"/>
